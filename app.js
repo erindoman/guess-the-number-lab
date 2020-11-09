@@ -29,7 +29,7 @@ const game = {
     render: function(guess) { //this class shows the message 
        let msg = (guess === this.secretNum) ?
             `Congrats! You guessed the number in ${this.prevGuesses.length} guesses!` : `Your guess is too ${guess > this.secretNum ? 'high' : 'low'}
-            Previous guesses: ${this.prevGuesses.join(',')}`;
+            Previous guesses: ${this.prevGuesses.join(', ')}`;
         alert(msg);
     }
 };
